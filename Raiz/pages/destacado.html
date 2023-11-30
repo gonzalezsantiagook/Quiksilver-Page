@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destacado</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img class="menu_burger" src="../css/img/menu.png" alt="">
+            <a href="../index.html"><img class="logo" src="../css/img/logo1.png" alt=""></a>
+            <div id="btn-tabla-mobile"class="espejo">Modificar tabla</div>
+        </div>
+        <nav>
+           <ul class="navigation">
+               <li><a href="../index.html"><p>Inicio</p></a></li>
+               <li class="actual"><a href="../pages/destacado.html"><p>Destacado</p></a></li>
+               <li><a href="../pages/contacto.html"><p>Contacto</p></a></li>
+           </ul>    
+        </nav> 
+        <div id="btn-tabla-escritorio" class="relleno"> Modificar tabla</div>         
+    </header>
+    <article class="articulo_destacado">
+        <div class="pos_img">
+            <img src="../css/img/Destacado2.jpg" alt="">
+        </div>
+        <div>
+        <section class="datos">
+            <h1>Olas</h1>
+            <p>$3500</p>
+        </section>
+        <section class="pos_tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>TALLE</th>
+                        <th>PECHO</th>
+                        <th>CINTURA</th>
+                        <th>CADERA</th>
+                        <th>LARGO</th>
+                        <th class="id_fila">ID</th>
+                    </tr>   
+                </thead>
+                <tbody id="guia_talles">
+                </tbody>
+            </table>
+        </section>
+        <p  id="rta_form"class="respuesta_form"></p>
+        <div class="organizar_form">
+            <div class="pos_form">
+                <h3>Formulario Agregar</h3>
+                <form id="form_tabla"class="formulario_tabla">
+                    <input type="text" id="talle"placeholder="talle(respetar minusculas)">
+                    <input type="text" id="pecho" placeholder="pecho">
+                    <input type="text" id="cintura" placeholder="cintura">
+                    <input type="text" id="cadera" placeholder="cadera">
+                    <input type="text" id="largo" placeholder="largo">
+                    <div>
+                        <input type="submit" id="agregar" value="Agregar">
+                        <button id="agregar3">Agregar x3</button>
+                    </div>                    
+                </form>
+            </div>
+            <div class="pos_form">
+                <h3>Formulario Modificar</h3>
+                <form id="form_modificar" class="formulario_tabla">
+                    <input type="number" id="elegir_id" placeholder="id de fila a modificar" required>
+                    <input type="text" id="talle2"placeholder="talle(respetar minusculas)">
+                    <input type="text" id="pecho2" placeholder="pecho">
+                    <input type="text" id="cintura2" placeholder="cintura">
+                    <input type="text" id="cadera2" placeholder="cadera">
+                    <input type="text" id="largo2" placeholder="largo">
+                    <input type="submit" id="modificar" value="Modificar">
+                </form>
+            </div>
+            <div class="pos_form">
+                <h3>Borrar fila</h3>
+                <input id="numero_fila" type="number" placeholder="id de la fila a borrar">
+                <button id="borrar_fila">Borrar Fila</button>
+            </div>
+        </div>
+        <section class="detalles_remera">
+            <ul>
+                <h2>Detalles: </h2>
+                <li>Corte clasico</li>
+                <li>Cuello redondo acanalado</li>
+                <li>Tejido de punto jersey 100% algodon</li>
+                <li>Remera urbana manga corta</li>
+            </ul>
+        </section>
+        </div>
+    </article>
+    <footer>
+        <div class="centrar_footer">
+            <section>
+                <p class="copyright">© 2022 - QUIKSILVER ARGENTINA</p>
+            </section>
+            <section class="iconos">
+                <a target="_blank"href="https://www.facebook.com"><img src="../css/img/facebook_blanco.png"></a>
+                <a target="_blank"href="https://www.instagram.com"><img src="../css/img/instagram_blanco.png"></a>
+                <a target="_blank"href="https://www.twitter.com"><img src="../css/img/twitter_blanco.png"></a>
+            </section>
+        </div>    
+    </footer>
+    <script src="../js/tabla_api.js"></script>
+    <script src="../js/desplegar_menu.js"></script>    
+</body>
+</html>
